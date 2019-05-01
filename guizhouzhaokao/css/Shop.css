@@ -1,0 +1,9 @@
+.mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn) {
+     margin-right: -10px !important; 
+}
+.mui-table-view-chevron .mui-table-view-cell {
+     padding-right: 15px !important; 
+}
+.mui-table-view .news{
+	text-wrap: wrap;
+}
