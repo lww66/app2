@@ -12,26 +12,26 @@
 </head>
 <body>
 	<nav class="mui-bar mui-bar-tab">
-	    <a class="mui-tab-item mui-active" href="src/Home.html">
+	    <a class="mui-tab-item mui-active" href="src/Home.html" id="home">
 	        <span class="mui-icon">
 	        	<img src="img/home_select.png" width="100%"/>
 	        </span>
 	        <span class="mui-tab-label">招考</span>
 	    </a>
-	    <a class="mui-tab-item" href="src/Shop.html">
+	    <a class="mui-tab-item" href="src/Shop.html" id="read">
 	        <span class="mui-icon">
 	        	<img src="img/topline.png" width="100%"/>
 	        </span>
 	        <span class="mui-tab-label">阅读</span>
 	    </a>
 	   
-	    <a class="mui-tab-item" href="src/Shopping.html">
+	    <a class="mui-tab-item" href="src/Shopping.html" id="book">
 	        <span class="mui-icon">
 	        	<img src="img/shop.png" width="100%"/>
 	        </span>
 	        <span class="mui-tab-label">书籍</span>
 	    </a>
-	    <a class="mui-tab-item" href="src/personal.html">
+	    <a class="mui-tab-item" href="src/personal.html" id="other">
 	        <span class="mui-icon">
 	        	<img src="img/user.png" width="100%"/>
 	        </span>
@@ -65,8 +65,39 @@
 			//当前激活选项
 			var activeTab = subpages[0];
 
+			//点击换导航图片
+			document.getElementById("home").onclick=function(){
+//				console.log(this.children[0].children[0]);
+				this.children[0].children[0].src="img/home_select.png";
+				document.getElementById("read").children[0].children[0].src="img/topline.png";
+				document.getElementById("book").children[0].children[0].src="img/shop.png";
+				document.getElementById("other").children[0].children[0].src="img/user.png";
+			}
+			document.getElementById("read").onclick=function(){
+//				console.log(this.children[0].children[0]);
+				this.children[0].children[0].src="img/topline_select.png";
+				document.getElementById("home").children[0].children[0].src="img/home.png";
+				document.getElementById("book").children[0].children[0].src="img/shop.png";
+				document.getElementById("other").children[0].children[0].src="img/user.png";
+			}
+			document.getElementById("book").onclick=function(){
+//				console.log(this.children[0].children[0]);
+				this.children[0].children[0].src="img/shop_select.png";
+				document.getElementById("home").children[0].children[0].src="img/home.png";
+				document.getElementById("read").children[0].children[0].src="img/topline.png";
+				document.getElementById("other").children[0].children[0].src="img/user.png";
+			}
+			document.getElementById("other").onclick=function(){
+//				console.log(this.children[0].children[0]);
+				this.children[0].children[0].src="img/user_select.png";
+				document.getElementById("home").children[0].children[0].src="img/home.png";
+				document.getElementById("book").children[0].children[0].src="img/shop.png";
+				document.getElementById("read").children[0].children[0].src="img/topline.png";
+			}
+			
 			//选项卡点击事件
 			mui('.mui-bar-tab').on('tap', 'a', function(e) {
+//				console.log(this.index); //undifound
 				var targetTab = this.getAttribute('href');
 				if(targetTab == activeTab) {
 					return;

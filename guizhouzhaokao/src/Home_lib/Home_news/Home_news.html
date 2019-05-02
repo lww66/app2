@@ -1,63 +1,105 @@
 <!doctype html>
-<html>
+<html style="height: 100%;">
 
 	<head>
 		<meta charset="UTF-8">
-		<title>消息</title>
+		<title>产品问卷调查</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../../../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../../../css/Home_news.css"/>
 	</head>
 
-	<body>
-		<script src="../../../js/mui.min.js"></script>
-		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">消息</h1>
+	<body style='height: 100%;background-color: #fff;'>
+		<header class="mui-bar mui-bar-nav" style="background-color: #1E90FF;">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color:#fff"><span class="title" style="position: absolute;right:-20px"><img src="../../../img/web_close.png" width="24px"/></span></a>
+		    <h1 class="mui-title" style="color:#fff;font-weight: 300;">产品使用调查</h1>
 		</header>
-		<div class="mui-content">
-
-			<!--
-            	作者：251185409@qq.com
-            	时间：2017-08-17
-            	描述：消息页面框架开始
-            -->
-			<ul class="mui-table-view">
-				<li class="mui-table-view-cell mui-collapse">
-					<a href="#">消息简介</a>
-					<div class="mui-collapse-content">
-						<p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
-					</div>
-				</li>
-				<li class="mui-table-view-cell mui-collapse">
-					<a class="" href="#">消息简介</a>
-					<div class="mui-collapse-content">
-						<p>内容</p>
-						<p>内容</p>
-						<p>内容</p>
-						<p>内容</p>
-						<p>内容</p>
-						<p>内容</p>
-						<p>内容</p>
-						<p>内容</p>
-						<p>内容</p>
-						<p>内容</p>
-						<p>内容</p>
-					</div>
-				</li>
-				<li class="mui-table-view-cell mui-collapse">
-					<a class="" href="#">消息简介</a>
-					<div class="mui-collapse-content">
-						<p>内容</p>
-					</div>
-				</li>
-			</ul>
-			<!--
-            	作者：251185409@qq.com
-            	时间：2017-08-17
-            	描述：消息页面框架结束
-            -->
-
+		<div class="mui-content" style="background-color: #fff;">
+			<!--版本-->
+			<div class="title" style="margin:30px 0;text-align: center;line-height: 1.4;font-size: 20px;color:#1E90FF;font-weight: 600;">
+				贵州招考APP新版本（版本号1.6.28）<br>使用调查
+			</div>
+			<!--表单-->
+			<form action="调查" id="form">
+				<!--性别-->
+				<p><span style="color:red">* </span>1.性别</p>
+				<div class="sex">
+					<p><input type="radio" name='sex' id="sex1"/><label for="sex1">男</label></p>
+					<p><input type="radio" name='sex' id="sex2"/><label for="sex2">女</label></p>
+				</div>
+				<!--年龄-->
+				<p><span style="color:red">* </span>2.您的年龄段:</p>
+				<div class="age">
+					<p><input type="radio" name='age' id="age1"/><label for="age1">18岁以下</label></p>
+					<p><input type="radio" name='age' id="age2"/><label for="age2">18~25</label></p>
+					<p><input type="radio" name='age' id="age3"/><label for="age3">26~30</label></p>
+					<p><input type="radio" name='age' id="age4"/><label for="age4">31~40</label></p>
+					<p><input type="radio" name='age' id="age5"/><label for="age5">41~50</label></p>
+					<p><input type="radio" name='age' id="age6"/><label for="age6">51~60</label></p>
+					<p><input type="radio" name='age' id="age7"/><label for="age7">60以上</label></p>
+				</div>
+				<!--职业状态-->
+				<p><span style="color:red">* </span>3.职业状态</p>
+				<div class="sex">
+					<p><input type="radio" name='job' id="job1"/><label for="job1">在校学生</label></p>
+					<p><input type="radio" name='job' id="job2"/><label for="job2">在职工作者</label></p>
+					<p><input type="radio" name='job' id="job3"/><label for="job3">自主创业者</label></p>
+					<p><input type="radio" name='job' id="job4"/><label for="job4">其他</label></p>
+				</div>
+				<!--职业状态-->
+				<p><span style="color:red">* </span>4.平时使用贵州招考APP的频次是?</p>
+				<div class="sex">
+					<p><input type="radio" name='use' id="use1"/><label for="use1">每天都在用</label></p>
+					<p><input type="radio" name='use' id="use2"/><label for="use2">间隔几天看一下</label></p>
+					<p><input type="radio" name='use' id="use3"/><label for="use3">想起来才看一下</label></p>
+					<p><input type="radio" name='use' id="use4"/><label for="use4">几乎不用</label></p>
+					<p><input type="radio" name='use' id="use5"/><label for="use5">其他</label></p>
+				</div>
+				<!--职业状态-->
+				<p><span style="color:red">* </span>5.您平时打开贵州招考APP的时间段大概是?</p>
+				<div class="sex">
+					<p><input type="radio" name='open' id="open1"/><label for="open1">早上</label></p>
+					<p><input type="radio" name='open' id="open2"/><label for="open2">中午</label></p>
+					<p><input type="radio" name='open' id="open3"/><label for="open3">下午</label></p>
+					<p><input type="radio" name='open' id="open4"/><label for="open4">晚上</label></p>
+					<p><input type="radio" name='open' id="open5"/><label for="open5">都有</label></p>
+					<p><input type="radio" name='open' id="open6"/><label for="open6">不确定</label></p>
+				</div>
+				<!--职业状态-->
+				<p><span style="color:red">* </span>6.您对贵州招考APP最新版本满意吗?</p>
+				<div class="sex">
+					<p><input type="radio" name='assess' id="assess1"/><label for="assess1">满意</label></p>
+					<p><input type="radio" name='assess' id="assess2"/><label for="assess2">不满意</label></p>
+					<p><input type="radio" name='assess' id="assess3"/><label for="assess3">一般</label></p>
+				</div>
+				<!--职业状态-->
+				<p><span style="color:red">&nbsp;&nbsp;</span>9.您对下一个版本有什么期待和建议?</p>
+				<div class="sex">
+					<p><input type="text" name='text' /><span></span></p>
+				</div>
+				<!--职业状态-->
+				<p><span style="color:red">&nbsp;&nbsp;</span>10.您希望更快上线哪些功能?<span style="color:#999;margin-left: 10px;">【多选题】</span></p>
+				<div class="sex">
+					<p><input type="checkbox" name='new' id="new1"/><label for="new1">内容搜索</label></p>
+					<p><input type="checkbox" name='new' id="new2"/><label for="new2">分类筛选</label></p>
+					<p><input type="checkbox" name='new' id="new3"/><label for="new3">收藏</label></p>
+					<p><input type="checkbox" name='new' id="new4"/><label for="new4">分享到QQ或微信</splabelan></p>
+					<p><input type="checkbox" name='new' id="new5"/><label for="new5">在线做题</label></p>
+					<p><input type="checkbox" name='new' id="new6"/><label for="new6">内容举报</label></p>
+					<p><input type="checkbox" name='new' id="new7"/><label for="new7">其他</label>
+						<input type="text" name="" id="other"/>
+					</p>
+				</div>
+				<div class="submit">
+					<input type="submit" name="" id="" value="提交" />
+				</div>
+			</form>
+			<p class="jubao">举报</p>
+			<div class="foot">
+				<span class="mui">☆</span> 问卷星 提供技术支持
+			</div>
 		</div>
+		<script src="../../../js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()
 		</script>

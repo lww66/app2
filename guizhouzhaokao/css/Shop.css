@@ -1,9 +1,21 @@
 .mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn) {
      margin-right: -10px !important; 
+     box-sizing: border-box;
+     border:1px solid transparent;
 }
 .mui-table-view-chevron .mui-table-view-cell {
      padding-right: 15px !important; 
 }
 .mui-table-view .news{
-	text-wrap: wrap;
+	/*white-space: pre-wrap;*/
+}
+.mui-table-view .mui-media-object {
+    line-height: 42px;
+     max-width: 96px; 
+     height: 65px; 
+}
+.mui-table-view .mui-media, .mui-table-view .mui-media-body {
+     overflow: visible;
+     white-space: ; 
+     font-size: 15px;
 }

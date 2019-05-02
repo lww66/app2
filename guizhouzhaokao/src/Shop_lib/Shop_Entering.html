@@ -1,40 +1,136 @@
 <!doctype html>
-<html>
+<html style="height: 100%;">
 
 	<head>
 		<meta charset="UTF-8">
-		<title>商家入驻</title>
+		<title>产品问卷调查</title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link href="../../css/mui.min.css" rel="stylesheet" />
-		<link rel="stylesheet" type="text/css" href="../../css/Home_activity.css"/>
+		<style type="text/css">
+			/*弹出框问题*/
+.mui-content>.mui-table-view:first-child {
+	margin-top: -1px;
+}
+.mui-popover .mui-popover-arrow {
+    position: absolute;
+    z-index: 1000;
+    top: -25px;
+    left: 0;
+    overflow: hidden;
+     width: 0px !important; 
+    height: 26px;
+}
+.mui-scroll-wrapper {
+    
+     overflow: inherit !important; 
+}
+#tanchuK{
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	z-index: 999 !important;
+}
+#popover{
+	left:0 !important;
+}
+#popover .tanMenu{
+	display: flex;
+	border-radius: 0;
+}
+#popover .tanMenu a{
+	flex:1;
+	text-align: center;
+}
+
+.mui-title{
+	width: 75% !important;
+	padding-left: 35px;
+	font-size: 18px;
+	font-weight: 100;
+	color:rgba(255,255,255,.8) !important;
+}
+.mui-content .titlebox{
+	border-bottom: 1px solid #F1F2F4;
+	padding-top: 20px;
+}
+.mui-content .titlebox .title{
+	font-size: 23px;
+	font-weight: 300;
+	font-family: "宋体";
+	color: #444;
+	line-height: 1.4;
+	text-indent: 14px;
+}
+.mui-content .titlebox .time{
+	color: #999;
+	font-size: 11px;
+	margin:15px 0 7px;
+}
+.mui-content .content{
+	margin-top: 15px;
+	font-size: 14px;
+	color:#555;
+	letter-spacing: 1.5px;
+	line-height: 1.5;
+	text-align: justify;
+	font-family: "宋体";
+}
+
+		</style>
 	</head>
 
-	<body>
-		<header class="mui-bar mui-bar-nav">
-		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-		    <h1 class="mui-title">商家入驻</h1>
+	<body style='height: 100%;background-color: #fff;'>
+		<header class="mui-bar mui-bar-nav" style="background-color: #1E90FF;">
+		    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left" style="color:#fff"><span class="title" style="position: absolute;right:-20px"><img src="../../img/web_close.png" width="24px"/></span></a>
+		    <h1 class="mui-title" style="color:#fff;font-weight: 300;">“100例免费试管婴儿”公益活动启动</h1>
+		    <a href="#popover" id="openPopover" class="mui-icon mui-pull-right" style="color:#fff"><img src="../../img/abc_ic_menu_share_mtrl_alpha.png" width="24px"/></a>
 		</header>
-		<div class="mui-content">
-			<!---->
-			<!--活动主图-->
-		     <div class="activity_imgdiv">
-		    	<img src="../../img/timg (3).jpg"/>
-		    </div>
-		    <!--活动说明-->
-		    <div class="details_cont">
-		    	<!--说明标题-->
-		    	<h3>商家入驻流程如下</h3>
-		    	<!--说明标题-->	
-		    	<div class="details_cont_text">
-		    		<p>一.介绍下平台</p>
-		    		<p>二.如何入驻</p>
-		    		<p>三.需要准备哪些资料</p>
-		    		<p>四.注意事项</p>
-		    	</div>
-		    	
-		    </div>
-		    <!---->
+		
+		<!--弹出菜单-->
+		<div id="popover" class="mui-popover">
+			<div class="mui-scroll-wrapper">
+			    <div class="mui-scroll" id="tanchuK">
+				    <div class="mui-table-view tanMenu">
+				    	<a href="">
+				    		<div><img src="../../img/umeng_socialize_wechat.png" alt="" /></div>
+				    		<p>微信</p>
+				    	</a>
+				    	<a href="">
+				    		<div><img src="../../img/umeng_socialize_wxcircle.png" alt="" /></div>
+				    		<p>朋友圈</p>
+				    	</a>
+				    	<a href="">
+				    		<div><img src="../../img/umeng_socialize_qq_on.png" alt="" /></div>
+				    		<p>微信</p>
+				    	</a>
+				    	<a href="">
+				    		<div><img src="../../img/umeng_socialize_qzone_on.png"/></div>
+				    		<p>微信</p>
+				    	</a>
+				    </div>
+				</div>
+			</div>
 		</div>
+		<!--弹出菜单结束-->
+		<div class="mui-content" style="background-color: #fff;padding:44px 20px 0">
+			<div class="titlebox">
+				<div class="title">“100例免费试管婴儿”公益活动启动</div>
+				<div class="time">发布时间：2019-04-30 12:11</div>
+			</div>
+			<p class="content">
+				5月1日，由贵州睿德迩妇产医院主办的“100例免费试管婴儿”大型不孕不育公益活动正式启动，将针对不孕不育困难家庭提供救助和帮扶，圆不孕不育患者的“求子梦”。
+			</p>
+			<p class="content">
+				5月1日，由贵州睿德迩妇产医院主办的“100例免费试管婴儿”大型不孕不育公益活动正式启动，将针对不孕不育困难家庭提供救助和帮扶，圆不孕不育患者的“求子梦”。5月1日，由贵州睿德迩妇产医院主办的“100例免费试管婴儿”大型不孕不育公益活动正式启动，将针对不孕不育困难家庭提供救助和帮扶，圆不孕不育患者的“求子梦”。5月1日，由贵州睿德迩妇产医院主办的“100例免费试管婴儿”大型不孕不育公益活动正式启动，将针对不孕不育困难家庭提供救助和帮扶，圆不孕不育患者的“求子梦”。5月1日，由贵州睿德迩妇产医院主办的“100例免费试管婴儿”大型不孕不育公益活动正式启动，将针对不孕不育困难家庭提供救助和帮扶，圆不孕不育患者的“求子梦”。
+			</p>
+			<p class="content">
+				5月1日，由贵州睿德迩妇产医院主办的“100例免费试管婴儿”大型不孕不育公益活动正式启动，将针对不孕不育困难家庭提供救助和帮扶，圆不孕不育患者的“求子梦”。5月1日，由贵州睿德迩妇产医院主办的“100例免费试管婴儿”大型不孕不育公益活动正式启动，将针对不孕不育困难家庭提供救助和帮扶，圆不孕不育患者的“求子梦”。5月1日，由贵州睿德迩妇产医院主办的“100例免费试管婴儿”大型不孕不育公益活动正式启动，将针对不孕不育困难家庭提供救助和帮扶，圆不孕不育患者的“求子梦”。5月1日，由贵州睿德迩妇产医院主办的“100例免费试管婴儿”大型不孕不育公益活动正式启动，将针对不孕不育困难家庭提供救助和帮扶，圆不孕不育患者的“求子梦”。
+			</p>
+			
+			
+			
+		</div>
+
 		<script src="../../js/mui.min.js"></script>
 		<script type="text/javascript">
 			mui.init()

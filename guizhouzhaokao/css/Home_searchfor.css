@@ -1,48 +1,30 @@
-/*搜索框*/
-			
-			.mui-title input {
-				width: 80%;
-				border-radius: 20px;
-				height: 35px;
-			}
-			/*搜索按钮*/
-			
-			.sousuo {
-				margin: 0 0 0 10px;
-				font-size: 16px;
-			}
-			
-			/*选择按钮的UI容器*/
-			
-			#uid {
-				padding: 0;
-				margin: 0;
-				display: -webkit-box;
-				-webkit-box-pack: center;
-				-webkit-box-align: center;
-				list-style: none;
-				background: #F7F7F7;
-				/* box-shadow: 0 0 1px rgba(0,0,0,.85);*/
-				box-shadow: 0 1px 2px #ccc;
-			}
-			/*按钮li*/
-			
-			#uid li {
-				-webkit-box-pack: center;
-				-webkit-box-align: center;
-				display: -webkit-box;
-				height: 40px;
-				width: 50%;
-				font-size: 20px;
-			}
-			/*li选择后的样式*/
-			
-			.hevr {
-				color: red;
-				border-bottom: 1px solid red;
-			}
-			/*去掉header标签的阴影效果*/
-			
-			.mui-bar {
-				box-shadow: none;
-			}
+header .title{
+	color:#fff;
+	line-height: 44px;
+	margin-left: 16px;
+}
+.mui-content{
+	background-color: #fff;
+}
+.mui-content .search{
+	height:45px;
+	padding:6px 10px 6px 10px;
+	border-bottom: 1px solid #e9ebec;
+}
+.mui-content .search input{
+	width: 85%;
+	float: left;
+	height:32px;
+	font-size: 13px;
+	border: 1px solid #e9ebec;
+	border-radius: 7px;
+}
+.mui-content .search span{
+	float: right;
+	display: block;
+	width: 15%;
+	text-align: center;
+	color:#000;
+	line-height: 33px;
+	font-weight: 300;
+}

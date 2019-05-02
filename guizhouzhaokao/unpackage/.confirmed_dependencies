@@ -88,7 +88,11 @@
 			"src/personal_lib/personal_Cardroll/personal_Withwine.html",
 			"src/personal_lib/personal_Promotion/personal_Promotion.html",
 			"src/personal_lib/personal_Merchant/personal_Merchant.html",
-			"src/personal_lib/personal_Order/personal_Order.html"
+			"src/personal_lib/personal_Order/personal_Order.html",
+			"src/personal_lib/personal_item/personal_propose.html",
+			"src/personal_lib/personal_item/personal_about.html",
+			"src/personal_lib/personal_item/personal_version.html",
+			"src/personal_lib/personal_item/personal_land.html"
 		],
 		"resources": [
 			"css/mui.min.css",
@@ -234,7 +238,9 @@
 			"css/mui.min.css",
 			"css/commod.css",
 			"js/mui.min.js",
-			"js/Jump.js"
+			"js/Jump.js",
+			"js/mui.js",
+			"css/mui.css"
 		],
 		"refer": [
 			"src/Home_lib/Home_product/Home_product_Details.html"

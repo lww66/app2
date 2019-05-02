@@ -27,12 +27,12 @@
 				<!--数据列表-->
 				<ul class="mui-table-view mui-table-view-chevron">
 					<!--<li class="mui-table-view-cell"><a class="mui-navigate-right">Item 1</a></li>-->
-				<ul class="mui-table-view">
-				    <li class="mui-table-view-cell mui-media">
+				<!--<ul class="mui-table-view">-->
+				    <li class="mui-table-view-cell mui-media a" htmlName="Shop_lib/Shop_Entering.html">
 				        <a href="javascript:;">
-				            <img class="mui-media-object mui-pull-right" src="http://placehold.it/40x30">
+				            <img class="mui-media-object mui-pull-right" src="../img/read1.png">
 				            <div class="mui-media-body">
-				                “100例免费试管婴儿”活动启动
+				                “100例免费试管婴儿”公益活<br>动启动
 				                <p class="mui-ellipsis" style="font-size: 10px;font-weight: 300;margin-top:5px">新闻资讯 2019-04-30 12:11</p>
 				            </div>
 				        </a>
@@ -57,18 +57,18 @@
 				    </li>
 				    <li class="mui-table-view-cell mui-media">
 				        <a href="javascript:;">
-				            <img class="mui-media-object mui-pull-right" src="http://placehold.it/40x30">
+				            <img class="mui-media-object mui-pull-right" src="../img/read2.png">
 				            <div class="mui-media-body news">
-				                用生命照亮千家万户————追忆南方电网德江供电局因公殉职员工方传齐、杨再怀
+				                用生命照亮千家万户——追忆<br>南方电网德江供电局因公殉职<br>员工方传齐、杨再怀
 				                <p class="mui-ellipsis" style="font-size: 10px;font-weight: 300;margin-top:5px">新闻资讯 2019-04-30 12:01</p>
 				            </div>
 				        </a>
 				    </li>
 				    <li class="mui-table-view-cell mui-media">
 				        <a href="javascript:;">
-				            <img class="mui-media-object mui-pull-right" src="http://placehold.it/40x30">
+				            <img class="mui-media-object mui-pull-right" src="../img/read3.png">
 				            <div class="mui-media-body">
-				                每天20吨垃圾实现分类回收 南明区将推广&amp;&quot;青云路&amp;&quot;经验
+				                每天20吨垃圾实现分类回收 南<br>明区将推广&amp;quot;青云路<br>&amp;quot;经验
 				                <p class="mui-ellipsis" style="font-size: 10px;font-weight: 300;margin-top:5px">新闻资讯 2019-04-30 00:01</p>
 				            </div>
 				        </a>
@@ -77,16 +77,44 @@
 				        <a href="javascript:;">
 				            <!--<img class="mui-media-object mui-pull-right" src="http://placehold.it/40x30">-->
 				            <div class="mui-media-body">
-				                【测一测】公务员考试4月时政专项测验66题
-				                <p class="mui-ellipsis" style="font-size: 10px;font-weight: 300;margin-top:5px">常识积累 2019-04-30 12:04</p>
+				                2020年公务员考试时政：5月新规来了
+				                <p class="mui-ellipsis" style="font-size: 10px;font-weight: 300;margin-top:5px">常识积累 2019-04-29 13:41</p>
 				            </div>
 				        </a>
 				    </li>
-				</ul>
+				    <li class="mui-table-view-cell mui-media">
+				        <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-right" src="../img/read3.png">
+				            <div class="mui-media-body">
+				                独山县影山镇：好风采带来<br>好“前景”
+				                <p class="mui-ellipsis" style="font-size: 10px;font-weight: 300;margin-top:5px">新闻资讯 2019-04-29 13:41</p>
+				            </div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mui-media">
+				        <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-right" src="../img/read3.png">
+				            <div class="mui-media-body">
+				                独山县影山镇：好风采带来<br>好“前景”
+				                <p class="mui-ellipsis" style="font-size: 10px;font-weight: 300;margin-top:5px">新闻资讯 2019-04-29 13:41</p>
+				            </div>
+				        </a>
+				    </li>
+				    <li class="mui-table-view-cell mui-media">
+				        <a href="javascript:;">
+				            <img class="mui-media-object mui-pull-right" src="../img/read3.png">
+				            <div class="mui-media-body">
+				                独山县影山镇：好风采带来<br>好“前景”
+				                <p class="mui-ellipsis" style="font-size: 10px;font-weight: 300;margin-top:5px">新闻资讯 2019-04-29 13:41</p>
+				            </div>
+				        </a>
+				    </li>
+				<!--</ul>-->
 				</ul>
 			</div>
 		</div>
 		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Jump.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			//获得slider插件对象
 var gallery = mui('.mui-slider');
@@ -114,11 +142,11 @@ gallery.slider({
 					mui('#pullrefresh').pullRefresh().endPullupToRefresh((++count > 2)); //参数为true代表没有更多数据了。
 					var table = document.body.querySelector('.mui-table-view');
 					var cells = document.body.querySelectorAll('.mui-table-view-cell');
-					var newCount = cells.length>0?5:20;//首次加载20条，满屏
-					for (var i = cells.length, len = i + 0; i < len; i++) {
+					var newCount = cells.length>0?2:20;//首次加载20条，满屏
+					for (var i = cells.length, len = i + 2; i < len; i++) {
 						var li = document.createElement('li');
 						li.className = 'mui-table-view-cell';
-						li.innerHTML = '<a class="mui-navigate-right">Item ' + (i + 1) + '</a>';
+						li.innerHTML = '<a href="javascript:;"><img class="mui-media-object mui-pull-right" src="../img/read3.png"><div class="mui-media-body">独山县影山镇：好风采带来<br>好“前景”<p class="mui-ellipsis" style="font-size: 10px;font-weight: 300;margin-top:5px">新闻资讯 2019-04-29 13:41</p></div></a>';
 						table.appendChild(li);
 					}
 				}, 1500);

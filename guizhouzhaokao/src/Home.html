@@ -18,7 +18,7 @@
 				<img src="../img/abc_ic_menu_share_mtrl_alpha.png" width="24px"/>
 			</a>
 		    <h1 class="mui-title" style="color:#fff;font-weight: 900;font-size: 19px;">贵州招考</h1>
-		    <span class="mui-icon mui-icon-search mui-pull-right" style="color:#fff"></span>
+		    <span class="mui-icon mui-icon-search mui-pull-right a" style="color:#fff"  htmlName="./Home_lib/Home_searchfor/Home_searchfor.html"></span>
 		</header>
 		<!--弹出菜单-->
 		<div id="popover" class="mui-popover">
@@ -62,7 +62,7 @@
 					      </a>
 					    </div>
 					    <!-- 第一张 -->
-					    <div class="mui-slider-item">
+					    <div class="mui-slider-item a" htmlName="./Home_lib/Home_news/Home_news.html">
 					      <a href="#">
 					        <img src="../img/diaocha.png">
 					      </a>
@@ -83,7 +83,7 @@
 					</div>
 					<!--轮播图结束-->
 					<ul class="mui-table-view mui-grid-view mui-grid-9" style="background-color: #fff;">
-					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4">
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-4 a"  htmlName="./Home_lib/Home_product/Home_product.html">
 					    <a href="#">
 					        <span class="mui-icon city" style="font-size: 19px;margin-bottom: 10px;color:#000;letter-spacing: 1.5px;">贵阳</span>
 					        <div class="mui-media-body" style="color: #666;">2100条信息</div>
@@ -143,6 +143,7 @@
 			</div>
 		</div>
 		<script src="../js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/Jump.js" type="text/javascript" charset="utf-8"></script>
 		<script>
 			//获得slider插件对象
 var gallery = mui('.mui-slider');
@@ -158,8 +159,8 @@ gallery.slider({
 					},
 					up: {
 //						auto:true,
-						contentrefresh: '正在加载...',
-						callback: pullupRefresh
+//						contentrefresh: '正在加载...',
+//						callback: pullupRefresh
 					}
 				}
 			});
